@@ -1,6 +1,7 @@
 package com.sahil.JournalApp.entity;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.sahil.JournalApp.enums.Sentiment;
 import lombok.*;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
@@ -47,6 +48,8 @@ public class JournalEntry {
     private String content;
 
     private LocalDateTime date;
+
+    private Sentiment sentiment;
 
 //    public LocalDateTime getDate() {
 //        return date;
